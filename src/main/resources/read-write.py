@@ -5,7 +5,7 @@ def write_new_file(contents):
 
 
 def main():
-    file = open("C:/Projects/Java/RunPythonScriptFromJavaProcess/src/main/resources/read-write.py", "r")
+    file = open("C:/Projects/Java/RunPythonScriptFromJavaProcess/src/main/resources/test.txt", "r")
     if file.mode == 'r':
         contents = file.read()
 
