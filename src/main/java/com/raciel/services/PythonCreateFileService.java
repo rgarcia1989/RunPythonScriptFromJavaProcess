@@ -12,7 +12,7 @@ import java.nio.file.Paths;
 public class PythonCreateFileService {
 
     public String createNewFile() throws IOException, InterruptedException {
-        ProcessBuilder pb = new ProcessBuilder("C:/Program Files/python.exe", "C:/Projects/Java/RunPythonScriptFromJavaProcess/src/main/resources/read-write.py");
+        ProcessBuilder pb = new ProcessBuilder("C:/Program Files/python.exe", "C:/Projects/Java/RunPythonScriptFromJavaProcess/src/main/resources/python-scripts/read-write.py");
         pb.redirectErrorStream(true);
 
         Process process = pb.start();
@@ -28,6 +28,6 @@ public class PythonCreateFileService {
         }
         String result = builder.toString();
 
-        return (statusCode == 0) ? "File created" : "There was an issue with script, Return code: " + String.valueOf(statusCode) + "/n ERROR: "+result;
+        return result;
     }
 }
