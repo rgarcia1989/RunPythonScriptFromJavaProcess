@@ -16,5 +16,7 @@ def main():
     print("New file created!")
 
 
+# add a function to throw some error condition
+
 if __name__ == '__main__':
     main()
